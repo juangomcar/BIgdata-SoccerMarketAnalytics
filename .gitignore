@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# macOS & Windows files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Data (raw & intermediate)
+data/raw/
+data/transfermark/player_valuations.csv
+data/transfermark/player_valuations_clean.csv
+data/processed/master.csv
+data/processed/master_with_values.csv
+data/processed/dataset_ready.csv
+
+# Optional: keep only final lightweight datasets if needed
