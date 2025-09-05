@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    container_name: football_db
+    environment:
+      POSTGRES_USER: psqluser
+      POSTGRES_PASSWORD: psqlpassword
+      POSTGRES_DB: football_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: football_app
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    ports:
+      - "8888:8888"
+    command: >
+      jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token=''
+
+volumes:
+  postgres_data:

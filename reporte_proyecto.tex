@@ -1,0 +1,171 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.5}
+
+% =======================
+% Portada
+% =======================
+\begin{document}
+\begin{titlepage}
+    \centering
+    {\Large \textbf{Universidad de La Sabana}}\\[0.3cm]
+    {\large Facultad de Ingeniería}\\[0.3cm]
+    {\large Maestría en Analítica Aplicada (Coterminal)}\\[2cm]
+
+    {\LARGE \textbf{Proyecto Final – Herramientas de Big Data}}\\[0.5cm]
+    {\Large Predicción del Valor de Mercado de Futbolistas}\\[2cm]
+
+    \textbf{Autores:}\\
+Esteban Bernal -- C\'od. 271930\\
+Juan Montes -- C\'od. 272113\\
+Juan G\'omez -- C\'od. 286774
+\\[0.5cm]
+
+\textbf{Asignatura:} Herramientas de Big Data (Coterminal)\\
+\textbf{Profesor:} Hugo Franco, Ph.D. \\[2cm]
+
+Ch\'ia, Colombia \\
+Septiembre 5, 2025
+
+
+    \vfill
+\end{titlepage}
+
+% =======================
+% Índice
+% =======================
+\tableofcontents
+\newpage
+
+% =======================
+% Resumen Ejecutivo
+% =======================
+\section{Resumen Ejecutivo (Brief)}
+Este proyecto presenta el diseño e implementación de un pipeline de datos bajo el paradigma ETL (Extract, Transform, Load) para la predicción del valor de mercado de futbolistas profesionales. 
+Se integraron fuentes de datos como Transfermarkt (valores históricos) y FBref (métricas de rendimiento), procesados mediante Python y orquestados en un entorno reproducible con PostgreSQL y Docker. 
+El objetivo fue entrenar modelos de Machine Learning (Regresión Lineal, Random Forest y XGBoost), demostrando que es posible obtener estimaciones objetivas y transparentes frente a los valores de referencia del mercado.
+
+% =======================
+% Abstract
+% =======================
+\section{Abstract}
+This project presents the design and implementation of a data pipeline under the ETL (Extract, Transform, Load) paradigm for predicting the market value of professional football players. 
+We integrated multiple data sources, such as Transfermarkt (historical values) and FBref (performance metrics), processed with Python and orchestrated in a reproducible environment using PostgreSQL and Docker. 
+The goal was to train Machine Learning models (Linear Regression, Random Forest, and XGBoost), showing that it is possible to generate objective and transparent estimates compared to market reference values.
+
+% =======================
+% Introducción
+% =======================
+\section{Introducción}
+\subsection{Formulación del problema}
+La valoración de jugadores de fútbol profesional es clave para clubes, agentes y patrocinadores. Sin embargo, los valores reportados en plataformas como Transfermarkt carecen de transparencia metodológica. Esto genera incertidumbre y riesgos en decisiones de inversión deportiva.
+
+\subsection{Marco conceptual}
+\begin{itemize}
+    \item \textbf{ETL Pipeline}: extracción, transformación y carga de datos.
+    \item \textbf{Métricas Avanzadas}: indicadores como goles esperados (xG), asistencias esperadas (xA).
+    \item \textbf{EDA}: análisis exploratorio de datos para identificar patrones.
+    \item \textbf{Modelos}: comparación de regresión lineal, Random Forest y XGBoost.
+\end{itemize}
+
+\subsection{Antecedentes}
+Diversos estudios muestran correlación entre rendimiento ofensivo y valor de mercado, aunque suelen limitarse a ligas específicas o datasets pequeños. Nuestro enfoque amplía la escala y aplica mejores prácticas de reproducibilidad.
+
+\subsection{Objetivo}
+Desarrollar un pipeline reproducible que integre datos de mercado y rendimiento para entrenar modelos de predicción robustos del valor de futbolistas.
+
+% =======================
+% Datos empleados
+% =======================
+\section{Datos empleados}
+\subsection{Fuentes de datos}
+\begin{enumerate}
+    \item \textbf{FBref.com}: vía web scraping para estadísticas de rendimiento (goles, asistencias, xG, xA, tackles).
+    \item \textbf{Transfermarkt (Kaggle)}: dataset histórico de valores de mercado, datos contractuales y demográficos.
+\end{enumerate}
+
+\subsection{Contenido y variables}
+\begin{itemize}
+    \item \textbf{Dependiente:} Valor de mercado en euros.
+    \item \textbf{Independientes:} Edad, posición, nacionalidad, goles/90, asistencias/90, xG, xA, tackles, club, liga.
+\end{itemize}
+
+% =======================
+% Metodología
+% =======================
+\section{Materiales y Métodos}
+\subsection{Pipeline ETL}
+\begin{enumerate}
+    \item \textbf{Extracción:} Scraping de FBref y carga de Transfermarkt desde Kaggle.
+    \item \textbf{Transformación:} Limpieza, unificación y normalización de datos.
+    \item \textbf{Carga:} Generación de un dataset consolidado (\texttt{dataset\_ready.csv}) almacenado en PostgreSQL vía Docker.
+\end{enumerate}
+
+\subsection{Análisis Exploratorio (EDA)}
+Distribuciones, correlaciones de Pearson, boxplots por posición y outliers identificados.
+
+\subsection{Modelado}
+Comparación de regresión lineal, Random Forest y XGBoost con métricas MAE, RMSE y $R^2$.
+
+% =======================
+% Resultados
+% =======================
+\section{Resultados}
+\begin{itemize}
+    \item XGBoost obtuvo el mejor desempeño predictivo.
+    \item Se identificaron jugadores sobrevalorados e infravalorados respecto a Transfermarkt.
+    \item Predicciones para 2025/2026 muestran consolidación de estrellas jóvenes como Bellingham y Yamal.
+\end{itemize}
+
+% =======================
+% Discusión y Conclusiones
+% =======================
+\section{Discusión y Conclusiones}
+\subsection{Discusión}
+Los resultados validan que el mercado tiende a sobrevalorar talento ofensivo y jóvenes promesas, mientras que los jugadores veteranos muestran ajustes a la baja. 
+El modelo se centra en métricas objetivas, excluyendo factores externos (marketing, popularidad).
+
+\subsection{Conclusiones}
+\begin{itemize}
+    \item Se construyó un pipeline reproducible en Python con PostgreSQL y Docker.
+    \item El modelo XGBoost ofrece estimaciones más objetivas que Transfermarkt.
+    \item El sistema puede ampliarse con datos de lesiones o redes sociales para futuras versiones.
+
+\end{itemize}
+
+% =======================
+% Bibliografía
+% =======================
+\section{Bibliografía}
+\begin{enumerate}
+    \item Franco, H. (2025). \textit{Material de clase – Herramientas de Big Data}. Universidad de La Sabana.
+    \item McKinney, W. (2017). \textit{Python for Data Analysis}. O'Reilly Media.
+    \item James, G., Witten, D., Hastie, T., \& Tibshirani, R. (2013). \textit{An Introduction to Statistical Learning}. Springer.
+\end{enumerate}
+
+% =======================
+% Anexos
+% =======================
+\section{Anexos}
+\subsection{Código Fuente}
+El código fuente completo (pipelines ETL, notebooks de modelado y consultas) está disponible en el repositorio de GitHub:  
+\url{https://github.com/usuario/bigdata-futbol-valor-mercado}
+
+\subsection{Datos empleados}
+Los datos crudos y el dataset procesado final (\texttt{dataset\_ready.csv}) se encuentran en el directorio \texttt{/data} del repositorio.
+
+\end{document}
+
+
+
+
