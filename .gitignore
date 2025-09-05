@@ -1,4 +1,6 @@
+# =======================
 # Python
+# =======================
 __pycache__/
 *.py[cod]
 *.pyo
@@ -24,7 +26,9 @@ Thumbs.db
 # Logs
 *.log
 
+# =======================
 # Data (raw & intermediate)
+# =======================
 data/raw/
 data/transfermark/player_valuations.csv
 data/transfermark/player_valuations_clean.csv
@@ -32,4 +36,15 @@ data/processed/master.csv
 data/processed/master_with_values.csv
 data/processed/dataset_ready.csv
 
-# Optional: keep only final lightweight datasets if needed
+# =======================
+# LaTeX build files
+# =======================
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.out
+*.lof
+*.lot
+*.log
