@@ -139,6 +139,7 @@ INPUT C:\Users\juanf\AppData\Local\Programs\MiKTeXx\fonts\tfm\public\cm\cmr12.tf
 INPUT C:\Users\juanf\AppData\Local\Programs\MiKTeXx\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\juanf\AppData\Local\Programs\MiKTeXx\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\juanf\AppData\Local\Programs\MiKTeXx\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\juanf\AppData\Local\Programs\MiKTeXx\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\juanf\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\reporte_proyecto.toc
 INPUT .\reporte_proyecto.toc
@@ -158,6 +159,8 @@ INPUT C:\Users\juanf\AppData\Local\Programs\MiKTeXx\fonts\tfm\public\cm\cmti12.t
 INPUT reporte_proyecto.aux
 INPUT .\reporte_proyecto.out
 INPUT .\reporte_proyecto.out
+INPUT C:\Users\juanf\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\juanf\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\juanf\AppData\Local\Programs\MiKTeXx\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\juanf\AppData\Local\Programs\MiKTeXx\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\juanf\AppData\Local\Programs\MiKTeXx\fonts\type1\public\amsfonts\cm\cmmi12.pfb

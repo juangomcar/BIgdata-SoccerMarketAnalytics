@@ -1,7 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1757056810.96331 "c:/Users/juanf/OneDrive/Escritorio/bigdata-futbol-valor-mercado/reporte_proyecto.tex" "reporte_proyecto.pdf" "reporte_proyecto" 1757056811.77403 0
-  "C:/Users/juanf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757056354 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1757058128.82288 "c:/Users/juanf/OneDrive/Escritorio/bigdata-futbol-valor-mercado/reporte_proyecto.tex" "reporte_proyecto.pdf" "reporte_proyecto" 1757058129.82331 0
+  "C:/Users/juanf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757058111 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/juanf/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757056707 14064 3511646ff898b70bc92b50d10b914a19 ""
   "C:/Users/juanf/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1756443143 24225515 cb3aff9f179fcd3a4df361f26eee8758 ""
+  "C:/Users/juanf/AppData/Local/Programs/MiKTeXx/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Users/juanf/AppData/Local/Programs/MiKTeXx/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/juanf/AppData/Local/Programs/MiKTeXx/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/juanf/AppData/Local/Programs/MiKTeXx/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -77,11 +79,11 @@
   "C:/Users/juanf/AppData/Local/Programs/MiKTeXx/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/juanf/AppData/Local/Programs/MiKTeXx/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/juanf/AppData/Local/Programs/MiKTeXx/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/juanf/OneDrive/Escritorio/bigdata-futbol-valor-mercado/reporte_proyecto.tex" 1757056810 7385 daae7a8dcefc77b87258ffe925de7c09 ""
-  "reporte_proyecto.aux" 1757056811 2921 77d2c13be82b82d0544bee869e0ddcdf "pdflatex"
-  "reporte_proyecto.out" 1757056811 2859 2945dd9aea8be2b6f1eb473578bd73af "pdflatex"
-  "reporte_proyecto.tex" 1757056810 7385 daae7a8dcefc77b87258ffe925de7c09 ""
-  "reporte_proyecto.toc" 1757056811 1725 efac97ee5c7155b463954e09522ee25d "pdflatex"
+  "c:/Users/juanf/OneDrive/Escritorio/bigdata-futbol-valor-mercado/reporte_proyecto.tex" 1757058125 7223 35e83b2a35ee3fdf2983442b0efbdcd1 ""
+  "reporte_proyecto.aux" 1757058129 2921 77d2c13be82b82d0544bee869e0ddcdf "pdflatex"
+  "reporte_proyecto.out" 1757058129 2859 2945dd9aea8be2b6f1eb473578bd73af "pdflatex"
+  "reporte_proyecto.tex" 1757058125 7223 35e83b2a35ee3fdf2983442b0efbdcd1 ""
+  "reporte_proyecto.toc" 1757058129 1725 efac97ee5c7155b463954e09522ee25d "pdflatex"
   (generated)
   "reporte_proyecto.aux"
   "reporte_proyecto.log"
